@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.logo,
+.menu {
+	display: inline-block;
+}
+
+.menu {
+	font-size: 24px;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.menu li a {
+	text-decoration: none;
+}
+
+.cover {
+	background-image: url("../images/background.png");
+	color: #fff;
+}
+
+.cover-title {
+	font-size: 60px;
+}
+
+.cover-slogan {
+	font-size: 35px;
+}
+
+.gallery-description {
+	color: #1F313C;
+	font-size: 35px;
+}
+
+.article-electrica-title,
+.article-acustica-title {
+	font-size: 52px;
+}

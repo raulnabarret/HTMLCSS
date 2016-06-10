@@ -3,14 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Invie</title>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
 	<!--Encabezado -->
-	<header id="header">
-		<figure>
+	<header id="header" class="header">
+		<figure class="logo">
 			<img src="images/invie.png" alt="">
 		</figure>
-		<nav>
+		<nav class="menu">
 			<ul>
 				<li>
 					<a href="index.html">Home</a>
@@ -21,33 +23,39 @@
 			</ul>
 		</nav>
 	</header>
+
 	<!-- Portada -->
-	<section id="cover">
-		<h1> Guitars</h1>
-		<h3> Lorem ipsum dolor sit amet.</h3>
+	<section id="cover" class="cover">
+		<h1 class="cover-title"> Guitars</h1>
+		<h3 class="cover-slogan"> Lorem ipsum dolor sit amet.</h3>
 		<button>Conoce más</button>
 	</section>
+
 	<!-- Guitarras -->
-	<section id="products">
-		<h2>Nuestras Guitarras</h2>
-		<article>
-			<h3>Guitarra Eléctrica</h3>
-			<img src="images/invie-classic.png" alt="">
-			<ol>
+	<section id="gallery" class="gallery">
+		<h2 class="gallery-description">Nuestras Guitarras</h2>
+
+		<article class="article-electrica">
+			<h3 class="article-electrica-title">Guitarra Eléctrica</h3>
+			<img class="article-electrica-image" src="images/invie-classic.png" alt="">
+			<ol class="article-electrica-description">
 				<li>Lorem ipsum dolor.</li>
 				<li>Lorem ipsum dolor sit.</li>
 				<li>Lorem ipsum dolor.</li>
 			</ol>
 		</article>
-		<article>
-			<h3>Guitarra Acústica</h3>
-			<img src="images/invie-acustica.png" alt="">
-			<ol>
+
+		<article class="article-acustica">
+			<h3 class=article-acustica-title>Guitarra Acústica</h3>
+			<img class="article-acustica-image" src="images/invie-acustica.png" alt="">
+			<ol class="article-acustica-description">
 				<li>Lorem ipsum dolor.</li>
 				<li>Lorem ipsum dolor sit.</li>
 				<li>Lorem ipsum dolor.</li>
 			</ol>
 		</article>
+
 	</section>
+
 </body>
 </html>
