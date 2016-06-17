@@ -3,9 +3,15 @@ body {
 	margin 0;
 }
 
-.header {
-	background-image: url("../images/background.png");
+.container {
+	width: 800px;
+	margin: auto;
 }
+
+.header {
+	position: relative;
+}
+
 
 .logo,
 .menu {
@@ -14,10 +20,13 @@ body {
 
 .menu {
 	font-size: 24px;
+	position: absolute;
+	right: 0;
 }
 
 .menu li {
 	display: inline-block;
+ 	margin-left: 30px;
 }
 
 .menu li a {
@@ -25,27 +34,62 @@ body {
 }
 
 .cover {
-	color: #fff;
-
+	background-image: url('../images/background.png');
+	color: white;
+	padding: 20px;
 }
 
 .cover-title {
-	font-size: 60px;
 	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
 	margin-bottom: 30px;
+	margin-bottom: 0;
 }
 
 .cover-slogan {
-	font-size: 35px;
-	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	margin-top: 0;
 }
 
-.gallery-description {
+.cover button {
+	margin-bottom: 70px;
+}
+
+.gallery {
 	color: #1F313C;
-	font-size: 35px;
 }
 
-.article-electrica-title,
-.article-acustica-title {
+.gallery-element {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #1F313C;	
+}
+
+.gallery-element-image-right {
+  float: right;
+  position: relative;
+  top: -127px;
+}
+
+.gallery-element-image-left {
+  float: left;
+  position: relative;
+  top: 80px;
+}
+ 
+.gallery-element-description-a {
+  padding-left: 20px;
+}
+
+.gallery-element-description-b {
+	margin-left: 370px;
+}
+
+.element-title {
 	font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.element-description {
+	padding: 0;
 }
