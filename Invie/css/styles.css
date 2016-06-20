@@ -99,3 +99,25 @@ body {
 .element-description {
 	padding: 0;
 }
+
+.footer {
+	background: #1F313C;
+}
+
+.footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer .contact a {
+	color: #fff;
+	text-decoration: none;;
+}
+
+.footer .contact img {
+	display: block;
+}
+
+.footer .contact strong {
+	display: block;
+}
