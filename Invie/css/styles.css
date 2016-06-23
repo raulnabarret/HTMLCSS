@@ -12,6 +12,9 @@ body {
 	position: relative;
 }
 
+.logo {
+	margin-left: 0;
+}
 
 .logo,
 .menu {
@@ -30,11 +33,13 @@ body {
 }
 
 .menu li a {
+	color: #fff;
 	text-decoration: none;
 }
 
 .cover {
 	background-image: url('../images/background.png');
+	background-size: cover;
 	color: white;
 	padding: 20px;
 }
@@ -54,10 +59,16 @@ body {
 .cover button {
 	border: none;
 	border-radius: 5px;
-	background: #fd324e;
+	background: linear-gradient(to right, #fe344e, #ff7250);	
 	color: #fff;
-	padding: 10px;
+	cursor: pointer;
+	font-size: 18px;
 	margin-bottom: 70px;
+	padding: 10px 20px;
+}
+
+.container h3 span {
+	text-decoration: underline;
 }
 
 .gallery {
@@ -161,9 +172,10 @@ body {
 .form .col2 input {
 	border: none;
 	border-radius: 5px;
-	background: #fd324e;
+	background: linear-gradient(to right, #fe344e, #ff7250);
+	font-size: 18px;
 	color: #fff;
-	padding: 10px;
+	padding: 10px 20px;
 	margin-bottom: 10px;
 }
 
