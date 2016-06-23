@@ -166,3 +166,26 @@ body {
 	padding: 10px;
 	margin-bottom: 10px;
 }
+
+
+.tabla-precios {
+	width: 100%;
+	padding: 100px 40px;
+}
+
+.tabla-precios, td, th {
+	border: 1px solid #273b47;
+	border-collapse: collapse;
+}
+
+
+.tabla-precios td {
+	padding: 20px;
+}
+
+.tabla-precios th {
+	background: #273b47;
+	color: #fff;
+	padding: 10px 20px;
+	text-align: left;
+}
