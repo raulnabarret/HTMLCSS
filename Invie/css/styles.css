@@ -101,17 +101,36 @@ body {
 }
 
 .footer {
+	color: #fff;
 	background: #1F313C;
 }
 
+.col1, 
+.col2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.col2 {
+	align-items: flex-start;
+}
+ 
 .footer .container {
 	display: flex;
 	justify-content: space-between;
 }
 
+.footer .contact {
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+}
+
 .footer .contact a {
 	color: #fff;
-	text-decoration: none;;
+	margin: 10px 10px 10px 0;
+	text-decoration: none;
+	align-items: center;
 }
 
 .footer .contact img {
@@ -120,4 +139,30 @@ body {
 
 .footer .contact strong {
 	display: block;
+}
+
+.footer .asunto label {
+	font-size: 12px;
+}
+
+.form label {
+	margin: 10px 0;
+}
+
+.form .categoria, 
+.form .asunto {
+	margin-top: 10px;
+}
+
+.form #comentarios {
+	margin-bottom: 10px ;
+}
+
+.form .col2 input {
+	border: none;
+	border-radius: 5px;
+	background: #fd324e;
+	color: #fff;
+	padding: 10px;
+	margin-bottom: 10px;
 }
