@@ -70,3 +70,23 @@ img, p{
 .colores:hover {
 	color: #333;
 }
+
+.rotacion:hover {
+	transform: rotate(360deg);
+}
+
+.escala:hover {
+	transform: scale(1.1);
+}
+
+.sesgado:hover {
+	transform: skew(5deg);
+}
+
+.traslacion:hover {
+	transform: translateX(50px);
+}
+
+.mixto:hover {
+	transform: rotate(360deg) scale(1.1);
+}
