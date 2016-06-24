@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-	width: 800px;
+	max-width: 800px;
 	margin: auto;
 }
 
@@ -57,7 +57,8 @@ body {
 
 .cover-slogan {
 	font-size: 24px;
-	margin-top: 0;
+	margin-top: 5px;
+	margin-bottom: 30px;
 }
 
 .lower-header {
@@ -207,6 +208,7 @@ input:focus, textarea:focus {
 	background: light-grey;
 }
 
+/*PRECIOS*/
 
 .tabla-precios {
 	width: 100%;
@@ -228,4 +230,165 @@ input:focus, textarea:focus {
 	color: #fff;
 	padding: 10px 20px;
 	text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+	
+	.cover {
+		height: auto;
+	}
+
+	.cover-title {	
+		font-size: 45px;
+	}
+
+	.cover-slogan {
+		font-size: 18px;
+	}
+
+	.gallery {
+		text-align: center;
+	}
+
+	.element-description {
+		list-style: none;
+	}
+
+	/*Articulo A*/
+
+	.gallery-element-image-right {
+		float: none;
+		position: static;
+	}
+
+	.gallery-element-description-a {
+		padding: 0px;		
+	}
+
+	.gallery-element-description-a .element-title {
+		margin: 10px 15px 5px 5px;
+	}
+
+	/*Articulo B*/
+
+	.gallery-element.b {
+		height: auto;
+	}
+
+	.gallery-element-image-left {
+		float: none;
+		position: static;
+	}
+
+	.gallery-element-description-b {
+		margin: 0;
+		padding: 0;		
+	}
+
+	.gallery-element-description-b .element-title {
+		margin: 10px 15px 5px 5px;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.header {
+		text-align: center;
+	}
+
+	.button {
+		font-size: 14px !important;
+	}
+
+	.header .logo {
+		margin: 15px;
+	}
+
+	.menu {
+		display: block;
+		position: static;
+	}
+
+	.menu ul {
+		padding: 0;
+	}
+
+	.menu ul li:first-child {
+		margin: 0;
+	}
+
+	.menu ul li:last-child {
+		border-bottom: 1px solid #fff;		
+	}
+
+	.menu ul li {
+		border-top: 1px solid #fff;
+		margin: 10px 0;
+		padding: 15px 0;
+		display: block;
+	}
+
+	.menu ul li a {
+		font-size: 24px;	
+	}
+
+	.lower-header {
+		text-align: center;
+	}
+
+	.gallery-element-image-left {
+		width: 200px;
+	}
+
+	.gallery-element-image-right {
+		width: 200px;
+	}
+
+	.element-title {
+		font-size: 20px;
+	}
+
+	/*Footer*/
+
+	.footer .container {
+		display: block;
+	}
+
+	.footer .contact {
+		display: block;
+		font-size: 26px;
+		margin: 0 auto;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.footer .contact img {
+		margin: 20px 0 20px 30px ;
+	}
+
+	.footer .form {
+		display: block;
+		font-size: 30px;
+		margin: 0 15px;
+	}
+
+
+	.footer .form .col1,
+	.footer .form .col2 {
+		margin: 0 auto;
+		max-width: 90%;
+	}
+
+	.asunto label {
+		display: block;
+		font-size: 30px !important;
+	}
+
+	input[type="radio"],
+	input[type="checkbox"] {
+		zoom: 1.8;
+	}
+
+	.col12 input {
+		font-size: 24px;
+	}
 }
