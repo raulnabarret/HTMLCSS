@@ -7,5 +7,28 @@ body {
 	border: 10px solid red;
 	background: #fff;
 	padding: 20px;
+	overflow: hidden;
 	text-align: center;
+}
+
+img, p{
+	transition: .3s;
+
+}
+
+.post img {
+	transform: translateY(-300px);
+
+}
+
+.post:hover img {
+	transform: translateY(0);
+}
+
+.post p {
+	transform: translateY(100px);
+}
+
+.post:hover p {
+	transform: translateY(0);
 }
