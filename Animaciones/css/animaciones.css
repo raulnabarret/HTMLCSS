@@ -13,7 +13,6 @@ body {
 
 img, p{
 	transition: .3s;
-
 }
 
 .post img {
@@ -31,4 +30,43 @@ img, p{
 
 .post:hover p {
 	transform: translateY(0);
+}
+
+/*CONTENEDOR*/
+
+.contendor {
+	font-family: sans-serif;
+	margin: 0;
+	width: 600px;
+}
+
+.transicion {
+/*	transition: transition-duration transition-timin-function transition-property*/	
+	/*transition-duration: .3s;
+	transition-property: opacity;
+	transition-timing-function: ease;*/
+	transition: .3s;
+}
+
+.caja {
+	border: 1px solid red;
+	height: 200px;
+	width: 200px;
+}
+
+.opacity {
+	opacity: 0;
+}
+
+.opacity:hover {
+	opacity: 1;
+}
+
+.fuente:hover {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.colores:hover {
+	color: #333;
 }
