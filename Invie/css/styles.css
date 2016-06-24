@@ -8,6 +8,11 @@ body {
 	margin: auto;
 }
 
+.background {
+	background-image: url('../images/background.png');
+	background-size: cover;
+}
+
 .header {
 	position: relative;
 }
@@ -38,9 +43,8 @@ body {
 }
 
 .cover {
-	background-image: url('../images/background.png');
-	background-size: cover;
 	color: white;
+	height: 500px;
 	padding: 20px;
 }
 
@@ -56,7 +60,11 @@ body {
 	margin-top: 0;
 }
 
-.cover button {
+.lower-header {
+	padding: 20px 0 60px 0;
+}
+
+.lower-header .button {
 	border: none;
 	border-radius: 5px;
 	background: linear-gradient(to right, #fe344e, #ff7250);	
@@ -64,15 +72,18 @@ body {
 	cursor: pointer;
 	font-size: 18px;
 	margin-bottom: 70px;
+	text-decoration: none;
 	padding: 10px 20px;
 }
 
-.container h3 span {
+.lower-header h3 span {
 	text-decoration: underline;
 }
 
 .gallery {
 	color: #1F313C;
+	margin-top: 40px;
+	margin-bottom: 80px;
 }
 
 .gallery-element {
@@ -80,6 +91,10 @@ body {
   padding: 10px;
   border: 1px solid #1F313C;	
   border-radius: 8px;
+}
+
+.gallery-element.b {
+	height: 250px;
 }
 
 .gallery-element-image-right {
@@ -91,7 +106,7 @@ body {
 .gallery-element-image-left {
   float: left;
   position: relative;
-  top: 80px;
+  top: 70px;
 }
  
 .gallery-element-description-a {
@@ -99,7 +114,9 @@ body {
 }
 
 .gallery-element-description-b {
+	bottom: 30px;
 	margin-left: 370px;
+	position: relative;
 }
 
 .element-title {
@@ -114,6 +131,7 @@ body {
 .footer {
 	color: #fff;
 	background: #1F313C;
+	padding: 50px 10px;
 }
 
 .col1, 
@@ -134,6 +152,8 @@ body {
 .footer .contact {
 	display: flex;
 	flex-wrap: wrap;
+	height: 200px;
+	padding: 100px 10px;
 	width: 300px;
 }
 
@@ -177,6 +197,14 @@ body {
 	color: #fff;
 	padding: 10px 20px;
 	margin-bottom: 10px;
+}
+
+input, textarea {
+	outline: 0;
+}
+
+input:focus, textarea:focus {
+	background: light-grey;
 }
 
 
