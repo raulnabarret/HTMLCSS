@@ -1,3 +1,42 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?ujud6r');
+    src:    url('fonts/icomoon.eot?ujud6r#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?ujud6r') format('truetype'),
+        url('fonts/icomoon.woff?ujud6r') format('woff'),
+        url('fonts/icomoon.svg?ujud6r#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+    content: "\e942";
+}
+.icon-envelop:before {
+    content: "\e945";
+}
+.icon-menu:before {
+    content: "\e9bd";
+}
+.icon-cancel-circle:before {
+    content: "\ea0d";
+}
+
 body {
 	font-family: 'Allerta', sans-serif;
 	margin 0;
@@ -24,6 +63,22 @@ body {
 .logo,
 .menu {
 	display: inline-block;
+}
+
+.responsive-menu{
+	border-radius: 50%;
+	background: #395667;
+	cursor: pointer;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	left: 20px;
+	position: absolute;
+	top: 20px;
+	text-align: center;
+	width: 40px;
+	z-index: 3;
+
 }
 
 .menu {
@@ -291,6 +346,10 @@ input:focus, textarea:focus {
 }
 
 @media screen and (max-width: 414px) {
+	.cover .container {
+		position: static;
+	}
+
 	.header {
 		text-align: center;
 	}
@@ -304,12 +363,26 @@ input:focus, textarea:focus {
 	}
 
 	.menu {
-		display: block;
-		position: static;
+		align-items: center;
+		background: rgba(255, 60, 88, 0.8);
+		bottom: 0;
+		display: flex;
+		left: -100%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: .3s;
+		width: 100%;
+		z-index: 2;
+	}
+
+	.menu.active {
+		left: 0;
 	}
 
 	.menu ul {
 		padding: 0;
+		flex: 1;
 	}
 
 	.menu ul li:first-child {
