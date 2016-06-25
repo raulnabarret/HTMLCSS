@@ -15,7 +15,7 @@
 		<!--Encabezado -->
 		<header id="header" class="header container">
 			<figure class="logo">
-				<img src="images/invie.png" width="186" height="60" alt="">
+				<img data-src="images/invie.png" width="186" height="60" alt="">
 			</figure>
 			<span class="responsive-menu icon-menu" id="responsive-menu"></span>
 			<nav class="menu" id="menu">
@@ -43,7 +43,7 @@
 		<h2 class="gallery-description">Nuestras Guitarras</h2>
 
 		<article class="gallery-element a">
-			<img class="gallery-element-image-right" width="350px" src="images/invie-acustica.png" alt="">
+			<img class="gallery-element-image-right" width="350px" data-src="images/invie-acustica.png" alt="">
 			
 			<div class="gallery-element-description-a">
 				<h3 class="element-title">Guitarra Clásica</h3>
@@ -56,7 +56,7 @@
 		</article>
 
 		<article class="gallery-element b">
-			<img class="gallery-element-image-left" width="350px" src="images/invie-classic.png" alt="">
+			<img class="gallery-element-image-left" width="350px" data-src="images/invie-classic.png" alt="">
 			<div class="gallery-element-description-b">
 				<h3 class="element-title">Guitarra Eléctrica</h3>
 				<ol class="element-description">
@@ -71,7 +71,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="contact">
-				<img height="80" src="images/invie-white.png" alt="">
+				<img height="80" data-src="images/invie-white.png" alt="">
 				<a href="tel:+528334037573"><strong>Teléfono</strong><span>123232312</span></a>
 				<a href="mailto:contacto@invie.com"><strong>Email</strong><span>contacto@invie.com</span></a>
 			</div>
@@ -113,6 +113,7 @@
 		</div>
 			
 	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
 	<script>
 
 		var pantalla = window.matchMedia('(max-width: 414px)');
@@ -128,7 +129,7 @@
 					menu.classList.toggle('active');
 				});
 
-				console.log('true')
+				console.log('true');
 
 			} else {
 
@@ -136,11 +137,15 @@
 					menu.classList.toggle('active');
 				});
 
-				console.log('false')
+				console.log('false');
 			}
 		}
 
-		mediaQuery()
+		mediaQuery();
+
+		//var bLazy = new Blazy ({
+		//	selector: 'img'
+		//});
 
 
 	</script>
