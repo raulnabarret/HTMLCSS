@@ -114,12 +114,34 @@
 			
 	</footer>
 	<script>
-		var $responsiveMenu = document.getElementById("responsive-menu");
-		var $menu = document.getElementById("menu");
 
-		$responsiveMenu.addEventListener('touchstart', function () {
-			$menu.classList.toggle('active');
-		});
+		var pantalla = window.matchMedia('(max-width: 414px)');
+		var responsiveMenu = document.getElementById("responsive-menu");
+		var menu = document.getElementById("menu");
+
+		pantalla.addListener(mediaQuery);
+
+		function mediaQuery () {
+			if (pantalla.matches) {
+
+				responsiveMenu.addEventListener('touchstart', function () {
+					menu.classList.toggle('active');
+				});
+
+				console.log('true')
+
+			} else {
+
+				responsiveMenu.removeEventListener('touchstart', function () {
+					menu.classList.toggle('active');
+				});
+
+				console.log('false')
+			}
+		}
+
+		mediaQuery()
+
 
 	</script>
 
