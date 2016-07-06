@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Invie</title>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/styles.css">
@@ -11,11 +12,12 @@
 <body>
 	<section id="cover" class="background">
 		<!--Encabezado -->
-		<header id="header" class="header container ">		
+		<header id="header" class="header container">		
 			<figure class="logo">
 				<img src="images/invie.png" width="186" height="60" alt="">
 			</figure>
-			<nav class="menu">
+			<span class="responsive-menu icon-menu" id="responsive-menu"></span>
+			<nav class="menu" id="menu">
 				<ul>
 					<li>
 						<a href="index.html">Home</a>
@@ -98,6 +100,41 @@
 		</div>
 			
 	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
+	<script>
 
+		var pantalla = window.matchMedia('(max-width: 414px)');
+		var responsiveMenu = document.getElementById("responsive-menu");
+		var menu = document.getElementById("menu");
+
+		pantalla.addListener(mediaQuery);
+
+		function mediaQuery () {
+			if (pantalla.matches) {
+
+				responsiveMenu.addEventListener('touchstart', function () {
+					menu.classList.toggle('active');
+				});
+
+				console.log('true');
+
+			} else {
+
+				responsiveMenu.removeEventListener('touchstart', function () {
+					menu.classList.toggle('active');
+				});
+
+				console.log('false');
+			}
+		}
+
+		mediaQuery();
+
+		//var bLazy = new Blazy ({
+		//	selector: 'img'
+		//});
+
+
+	</script>
 </body>
 </html>

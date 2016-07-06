@@ -359,6 +359,7 @@ input:focus, textarea:focus {
 	.gallery-element-description-b .element-title {
 		margin: 10px 15px 5px 5px;
 	}
+
 }
 
 @media screen and (max-width: 414px) {
@@ -368,6 +369,10 @@ input:focus, textarea:focus {
 
 	.header {
 		text-align: center;
+	}
+
+	.header.container {
+		position: static;
 	}
 
 	.button {
@@ -418,6 +423,10 @@ input:focus, textarea:focus {
 
 	.menu ul li a {
 		font-size: 24px;	
+	}
+
+	.responsive-menu {
+		color: #fff;
 	}
 
 	.lower-header {
@@ -479,6 +488,16 @@ input:focus, textarea:focus {
 
 	.col12 input {
 		font-size: 24px;
+	}
+
+	/*Precios*/
+
+	.tabla-precios {
+		padding: 0;
+	}
+
+	.tabla-precios .container {
+		overflow: auto;
 	}
 }
 
