@@ -225,7 +225,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	height: 200px;
-	padding: 100px 10px;
+	padding: 100px 5px;
 	width: 300px;
 }
 
@@ -360,6 +360,12 @@ input:focus, textarea:focus {
 		margin: 10px 15px 5px 5px;
 	}
 
+	#comentarios { 
+		resize: horizontal; 
+		max-width: 250px; 
+		min-width: 100px;
+	}
+
 }
 
 @media screen and (max-width: 414px) {
@@ -474,6 +480,12 @@ input:focus, textarea:focus {
 	.footer .form .col2 {
 		margin: 0 auto;
 		max-width: 90%;
+	}
+
+	#comentarios { 
+		resize: horizontal; 
+		max-width: 250px; 
+		min-width: 100px; 
 	}
 
 	.asunto label {

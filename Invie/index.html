@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <!-- 	<link rel="stylesheet" media="(max-width: 800px)" href="css/media-query.css">
  --></head>
-<body>
+<body id="body">
 	<!-- Portada -->
 	<section id="cover" class="cover background">
 		<!--Encabezado -->
@@ -100,9 +100,6 @@
 						<label for="reclamos">
 							<input type="checkbox" id="reclamos" name="asunto" value="reclamos"> Reclamos
 						</label>
-						<label for="comentarios">
-							<input type="checkbox" id="comentarios" name="asunto" value="comentarios"> Comentarios
-						</label>
 						<label for="otros">
 							<input type="checkbox" id="otros" name="asunto" value="otros"> Otros
 						</label>
@@ -118,6 +115,7 @@
 			
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 	<script>
 
 		var pantalla = window.matchMedia('(max-width: 414px)');
@@ -150,6 +148,20 @@
 		//var bLazy = new Blazy ({
 		//	selector: 'img'
 		//});
+
+
+		//Hammer.js
+
+		var cuerpo = document.body;
+
+		var gesture = new Hammer(cuerpo);
+		gesture.on('swipeleft', function () {
+			menu.classList.remove('active');
+		});
+
+		gesture.on('swiperight', function () {
+			menu.classList.add('active');
+		});
 
 
 	</script>
